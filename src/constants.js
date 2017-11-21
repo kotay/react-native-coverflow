@@ -1,3 +1,4 @@
+export const SENSITIVITY_VERY_LOW = 'veryLow';
 export const SENSITIVITY_LOW = 'low';
 export const SENSITIVITY_HIGH = 'high';
 export const SENSITIVITY_NORMAL = 'normal';
