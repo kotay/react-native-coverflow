@@ -3,6 +3,7 @@ import { Animated, View, PanResponder, StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 
 import {
+  SENSITIVITY_VERY_LOW,
   SENSITIVITY_LOW,
   SENSITIVITY_NORMAL,
   SENSITIVITY_HIGH,
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
 
 class Coverflow extends Component {
   static propTypes = {
-    sensitivity: PropTypes.oneOf([SENSITIVITY_LOW, SENSITIVITY_NORMAL, SENSITIVITY_HIGH]),
+    sensitivity: PropTypes.oneOf([SENSITIVITY_VERY_LOW, SENSITIVITY_LOW, SENSITIVITY_NORMAL, SENSITIVITY_HIGH]),
     deceleration: PropTypes.oneOf([DECELERATION_NORMAL, DECELERATION_FAST]),
     initialSelection: PropTypes.number,
     spacing: PropTypes.number,
